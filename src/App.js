@@ -7,45 +7,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <div>
-          <a
-            className="App-link"
-            href="/create"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Create
-          </a>
+        <div className="Header-left">
+          <div>left</div>
         </div>
-        <div>
-          <a
-            className="App-link"
-            href="/design"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Design
-          </a>
+        <div className="Header-center">
+          <div><a className="App-menu" href="/create" rel="noopener noreferrer">Create</a></div>
+          <div><a className="App-menu" href="/design" rel="noopener noreferrer">Design</a></div>
+          <div><a className="App-menu" href="/view" rel="noopener noreferrer">View</a></div>
+          <div><a className="App-menu" href="/apply" rel="noopener noreferrer">Apply</a></div>
         </div>
-        <div>
-          <a
-            className="App-link"
-            href="/view"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View
-          </a>
-        </div>
-        <div>
-          <a
-            className="App-link"
-            href="/apply"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Apply
-          </a>
+        <div className="Header-right">
+          <div>right</div>
         </div>
       </header>
       <body className="App-body">
@@ -53,7 +25,7 @@ function App() {
       </body>
       <footer className="App-footer">
         <div>Yoonjung Park</div>
-        <div>email: cute7483@gmail.com</div>
+        <div>Email: cute7483@gmail.com</div>
         <div>
           <a
             className="App-link"

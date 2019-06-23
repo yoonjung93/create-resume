@@ -10,22 +10,38 @@
 
 .App-header {
   background-color: #282c34;
-  height: 10vh;
-  display: flex;
-  /* flex-direction: column; */
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
+  height: 5vh;
+  font-size: calc(10px + 0.8vmin);
   color: white;
+  display: grid;
+  grid-template-areas: 'header-left header-center header-right';
+  grid-template-columns: 160px 1fr 160px;
+  grid-template-rows: minmax(0, 5vh);
 }
 
-/* .App-header > div {
-  margin: 10px;
-} */
+.App-header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header-left {
+  grid-area: header-left;
+}
+.Header-center {
+  grid-area: header-center;
+}
+.Header-right {
+  grid-area: header-right;
+}
+
+.Header-center > div {
+  margin: 20px;
+}
 
 .App-body {
   background-color: #e8e8e8;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +63,15 @@
 
 .App-footer > div {
   margin: 0 10px;
+}
+
+.App-menu {
+  color: #fff;
+  text-decoration-line: none;
+}
+.App-menu:hover {
+  color: #fff;
+  text-decoration-line: underline;
 }
 
 .App-link {
